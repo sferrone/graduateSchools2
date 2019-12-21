@@ -23,9 +23,3 @@ class Degrees:
     def SetNote(self, note):
         self.note = note
 
-myDegree = Degrees("Sapienza", courses = ["General Relativity", "Particle Physics"], cycle = "Magistrale", duration = 2, note = "This is my first python object")
-print("name", myDegree.name)
-print("cycle", myDegree.cycle)
-print("duration", myDegree.duration)
-print("courses = ", myDegree.courses)
-print('Note: ', myDegree.note)
