@@ -23,9 +23,12 @@ class Degrees:
     def SetNote(self, note):
         self.note = note
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> development
