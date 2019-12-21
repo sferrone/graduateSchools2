@@ -1,3 +1,5 @@
+from Degrees import *
+from Location import *
 class School:
     def __init__(self, name, location=None, note="", degrees=[]):
         self.SetName(name)
@@ -16,3 +18,4 @@ class School:
 
     def SetDegrees(self, degrees):
         self.degrees = degrees
+
