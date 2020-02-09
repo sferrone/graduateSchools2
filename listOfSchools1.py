@@ -131,6 +131,7 @@ for i in range(0, len(opprotunities)):
     treeview.insert('', 'end', opprotunities[i].name, text=opprotunities[i].name)
     dictionaryChecker(treeview, opprotunities[i].name, opprotunities[i].__dict__.items())
     
+root.mainloop()
 
 '''
 6 February 2020
