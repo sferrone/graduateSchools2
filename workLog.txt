@@ -1,0 +1,68 @@
+Sal - 
+6 February 2020
+Things we still need:
+
+(1) an application materials class.
+Some basic attributes such as:
+    Number of recomendation letters: int
+    Personal statement: True/False (maybe prompt?)
+    Statement of Purpose: True/False (maybe store prompt instead)
+    Language requirements: {"Italian": "B2", "French": "C1", "English": "C2"}
+    Demographics: "Finished" or "Not Finished"
+    
+We also need a method that allows the user to enter specific/ not standard
+    items to application class (maybe, I think this is a lower priority item)
+    
+    class application:
+        def __init__(self):
+
+(2) Be able to save, store, and load Opportunity objects 
+    ******* (I think this is handled by using the CSV). One thing I would suggest is 
+    some kind of mechanism, maybe a button in the GUI that says "add Opportunity"
+
+(3) Have a way to create new opportunity objects and add the conents to a previous
+        the save file
+
+(4) Edit layout of GUI to have values be in columns adjacent to names instead of below
+        > programType:    Masters
+    instead of
+        > programType:
+            Masters
+    (this is low priority)
+    ^ I think just think of the best layout in general
+    
+
+
+
+
+
+
+
+Ben -                                                                                                                                                                    
+9 February 2020                                                                                                                                                          
+                                                                                                                                                                         
+What I did:                                                                                                                                                              
+(1) Added a CsvFile class, which creates objects given a .csv file containing data on our opportunities. I added this just in case we use                                
+other CSV files in the future. Also I think a similar class will be useful for future projects and can be adapted easily. The columns{}                                  
+dictionary is simply to avoid hardcoding too much stuff                                                                                                                  
+                                                                                                                                                                         
+(2) Made the makePrograms() and makeProgram() functions. The former is what we call to extract our information from the                                                  
+CSV file, and then loops through each row. In the loop it calls a helper function (I created the 2nd function just to make the                                           
+code a little neater) called makeProgram() which takes that row and creates an Opportunity object based on the data in it                                                
+                                                                                                                                                                         
+(3) Changed "Opprotunity" to "Opportunity"                                                                                                                               
+                                                                                                                                                                         
+(4) Created this workLog.txt file. I think this may end up becoming the ReadMe                                                                                           
+                                                                                                                                                                         
+(Se vedi qualcos'altro che ho fatto di cui non sei sicuro, o se hai domande generali fammi sapere)                                                                       
+                                                                                                                                                                         
+                                                                                                                                                                         
+Things we still need:                                                                                                                                                    
+                                                                                                                                                                         
+(1) Be able to add all data from a row in the CSV file, as right now we only add a few columns of information.                                                           
+    This functionality will go in the makeProgram() function, which is a helper function for makePrograms()                                                              
+                                                                                                                                                                         
+(2) Make links in the GUI active hyperlinks. This page looks useful http://effbot.org/zone/tkinter-text-hyperlink.htm                                                    
+                                                                                                                                                                         
+(3) 
+
